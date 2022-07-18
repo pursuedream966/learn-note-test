@@ -16,15 +16,15 @@ public class Result <T> implements Serializable {
     private String msg;
     private T data;
 
-    public static <T> Result<T> success(){
+    public static <T> Result<T> ok(){
         return new Result<>(CommonConstant.SUCCESS, null, null);
     }
 
-    public static <T> Result<T> success(String msg){
+    public static <T> Result<T> ok(String msg){
         return new Result(CommonConstant.SUCCESS, msg, null);
     }
 
-    public static <T> Result<T> success(String msg, T t){
+    public static <T> Result<T> ok(String msg, T t){
         return new Result(CommonConstant.SUCCESS, msg, t);
     }
 
