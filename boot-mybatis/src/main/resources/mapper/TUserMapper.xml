@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.pursuedream.bootmybatis.persistence.mapper.TUserMapper">
+    <insert id="save">
+        insert into t_user(username) values(#{username})
+    </insert>
+
+    <select id="getById" resultType="cn.pursuedream.bootmybatis.persistence.entity.TUser">
+        select * from t_user where id = #{id}
+    </select>
+
+</mapper>

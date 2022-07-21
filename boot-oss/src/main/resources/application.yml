@@ -1,0 +1,12 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: boot-oss
+
+aliyun:
+  oss:
+    endpoint: oss-cn-shanghai.aliyuncs.com
+    access-key-id: LTAI5tDMNUV14AiXB6yyjEjd
+    access-key-secret: kYKCP2FmiwDVzWBdnBfinuG5vzeGhq
+    bucket-name: dev-pursuedream-cn

@@ -17,6 +17,8 @@
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
         <hutool.version>5.8.4</hutool.version>
+        <spring-cloud-oauth2.version>2.2.5.RELEASE</spring-cloud-oauth2.version>
+        <spring-cloud-security.version>2.2.5.RELEASE</spring-cloud-security.version>
     </properties>
 
     <modules>
@@ -24,6 +26,9 @@
         <module>boot-nacos</module>
         <module>boot-security</module>
         <module>common-lib</module>
+        <module>boot-oauth</module>
+        <module>boot-oss</module>
+        <module>boot-mybatis</module>
     </modules>
 
     <dependencies>
@@ -89,7 +94,6 @@
                 <scope>import</scope>
             </dependency>
 
-
             <!--spring cloud alibaba-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -97,6 +101,18 @@
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-oauth2</artifactId>
+                <version>${spring-cloud-oauth2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-security</artifactId>
+                <version>${spring-cloud-security.version}</version>
             </dependency>
 
         </dependencies>
