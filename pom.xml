@@ -29,6 +29,7 @@
         <module>boot-oauth</module>
         <module>boot-oss</module>
         <module>boot-mybatis</module>
+        <module>boot-mvc</module>
     </modules>
 
     <dependencies>
